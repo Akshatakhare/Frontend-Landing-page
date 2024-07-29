@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What to pack to a Southeast Asian country</title>
+    <link rel="icon" type="image/x-icon" href="final.png">
+    <script src="index.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        .noto-sans-uniquifier {
+            font-family: "Noto Sans", sans-serif;
+
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        header .header {
+            position: fixed;
+            top: 70px;
+            z-index: 1;
+            width: 100%;
+            background-color: #f1f1f1;
+        }
+
+        /* The progress container (grey background) */
+        .progress-container {
+            width: 100%;
+            height: 8px;
+            background: #ccc;
+        }
+
+        /* The progress bar (scroll indicator) */
+        .progress-bar {
+            height: 8px;
+            background: #284ad1;
+            width: 0%;
+        }
+
+        * {
+            margin: 0;
+        }
+
+        .head {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70px;
+            /* border: 2px solid black; */
+            position: fixed;
+            /* Set the heading to fixed position */
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            box-shadow: 2px 0px 5px;
+            z-index: 9999;
+        }
+
+        header ul {
+            list-style: none;
+            display: flex;
+            /* position: absolute; */
+            top: 5%;
+            left: 50%;
+            overflow: hidden;
+        }
+
+        .middle {
+
+            padding-top: 20px;
+        }
+
+        ul li {
+            padding: 10px;
+            text-align: center;
+            font-family: "Noto Sans", sans-serif;
+            font-size: 18px;
+
+        }
+
+        ul li span {
+            text-decoration: underline;
+        }
+
+        nav {
+            padding: 0px 30px;
+            padding-top: 70px;
+        }
+
+        nav a {
+            font-family: "Noto Sans", sans-serif;
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 4px;
+        }
+
+        .header-right {
+            float: right;
+            text-align: center;
+        }
+
+        .header-right a:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            display: inline;
+        }
+
+        @media screen and (max-width: 500px) {
+            nav a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .header-right {
+                float: right;
+            }
+        }
+
+        .pic {
+            padding: 45px 60px;
+            padding-bottom: 10px;
+        }
+
+        .pic img {
+            height: 80vh;
+            object-fit: cover;
+            object-position: top;
+        }
+
+
+        footer {
+            height: 60vh;
+            color: white;
+            background-color: rgb(27, 26, 26);
+
+        }
+
+        .mainbox {
+            height: 40vh;
+            padding: 45px;
+            display: flex;
+            gap: 400px;
+        }
+
+        .boox {
+            font-family: "Nunito", sans-serif;
+            font-size: 17px;
+            padding: 23px;
+            font-weight: 400;
+        }
+
+        .rbox {
+            width: 600px;
+            font-weight: 100;
+            font-size: 17px;
+        }
+
+        .rbox h3 {
+            font-weight: 600;
+            font-size: 30px;
+        }
+
+        .tbox {
+            display: flex;
+            gap: 90px;
+            height: 40vh;
+            width: 30vw;
+        }
+
+        .box0 h4 {
+            font-weight: 600;
+            font-size: 22px;
+        }
+
+        .gbox a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .gbox a:hover {
+            text-decoration: none;
+            color: burlywood;
+        }
+
+        article {
+            font-family: "Noto Sans", sans-serif;
+            padding: 5px 180px;
+            margin: 0px 200px;
+        }
+
+        h1 {
+            font-size: 45px;
+            font-weight: 600;
+            padding-bottom: 30px;
+            line-height: 1;
+        }
+
+        .span {
+            font-weight: 600;
+            line-height: 2;
+            font-size: 13px;
+        }
+
+        sub {
+            line-height: 1.7;
+        }
+
+        sub p {
+            font-size: 18px;
+            color: rgb(91, 91, 91);
+            font-weight: 400;
+        }
+
+        sub h3 {
+            font-size: 20px;
+            padding: 20px 0px;
+            font-weight: 550;
+        }
+
+        .bottom {
+            padding-bottom: 45px;
+        }
+
+        section {
+            font-family: "Noto Sans", sans-serif;
+            padding: 5px 170px;
+            margin: 5px 200px;
+        }
+
+        .boxes {
+            display: flex;
+            gap: 30px;
+        }
+
+        .box img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .box h4 {
+            font-size: 19px;
+            line-height: 2;
+        }
+
+        .box p {
+            font-size: 16px;
+            color: rgb(105, 105, 105);
+            font-weight: 400;
+            padding-bottom: 50px;
+            line-height: 2;
+        }
+
+        hr {
+            color: rgb(91, 91, 91);
+        }
+
+        /* Pagination */
+        .pagination a {
+            color: black;
+            float: right;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: background-color .3s;
+        }
+
+        .pagination a.active {
+            background-color: dodgerblue;
+            color: white;
+        }
+
+        /* Add a grey background color on mouse-over */
+        .pagination a:hover:not(.active) {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <ul>
+                <li><img width="46" height="46" viewBox="0 0 23 24" fill="none" src="ak logo.png" alt="AK"></li>
+                <li class="middle">Contact me at <span class="u">akshatakhare07@gmail.com</span></li>
+            </ul>
+        </div>
+        <div class="header">
+            <h2></h2>
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
+        </div>
+    </header>
+    <br>
+    <nav>
+        <div class="logo">
+            <img width="17%" src="wanderlust travels.png" alt="">
+        </div>
+        <div class="header-right">
+            <a class="active" href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="aboutus.html">About</a>
+            <a href="#Journey">Blog</a>
+        </div>
+    </nav>
+    <div class="pagination">
+        <a href="#">&raquo;</a>
+        <a href="contact.html">6</a>
+        <a href="aboutus.html">5</a>
+        <a href="doctors.html">4</a>
+        <a href="beginners.html">3</a>
+        <a class="active" href="country.html">2</a>
+        <a href="index.html">1</a>
+        <a href="#">&laquo;</a>
+    </div>
+    <div class="pic">
+        <img src="https://images.unsplash.com/photo-1586100866229-5749c821a61d?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width="100%">
+    </div>
+    <article>
+        <p class="span">July 27,2024</p>
+        <h1>What to pack to a Southeast Asian country</h1>
+        <sub>
+
+            <p>Embarking on a journey to a Southeast Asian country promises a vibrant tapestry of cultures, breathtaking
+                landscapes, and delicious cuisine. To ensure a seamless and enjoyable experience, packing strategically
+                is key. Here’s a concise guide to help you make the most of your adventure:</p>
+            <h3>Light and Breathable Clothing</h3>
+            <p>Southeast Asia’s tropical climate demands lightweight, breathable fabrics. Pack loose-fitting clothes to
+                stay cool, and don’t forget a swimsuit for impromptu beach outings.</p>
+
+            <h3>Comfortable Footwear</h3>
+            <p>Choose comfortable, durable shoes suitable for exploring diverse terrains. Flip-flops or sandals are
+                essential for navigating sandy shores and bustling markets.</p>
+
+            <h3>Travel Adapters</h3>
+            <p>Power outlets can vary across countries. A universal travel adapter ensures your devices stay charged,
+                allowing you to capture every moment.</p>
+
+            <h3>Mosquito Repellent</h3>
+            <p>Protect yourself from tropical diseases by packing a reliable mosquito repellent. It’s a small but
+                crucial item for a health-conscious traveler.</p>
+
+            <h3>Travel-Sized First Aid Kit</h3>
+            <p>A compact first aid kit with essentials like band-aids, antiseptic wipes, and any personal medications
+                ensures you’re prepared for minor health issues.</p>
+
+            <h3>Sun Protection</h3>
+            <p>Southeast Asia boasts plenty of sunshine. Pack a high SPF sunscreen, a wide-brimmed hat, and sunglasses
+                to shield yourself from the intense rays.</p>
+
+            <h3>Reusable Water Bottle </h3>
+            <p>Stay hydrated while reducing your environmental impact. A reusable water bottle is handy for refilling
+                throughout your journey.</p> <br>
+            <p class="bottom">By keeping these essentials in mind, you’ll be well-prepared to dive into the wonders of
+                Southeast Asia, creating lasting memories without the worry of forgetting crucial items. Happy travels!
+            </p>
+        </sub>
+        <hr>
+    </article>
+    <section>
+        <div class="boxes">
+            <div class="box">
+                <img src="data:image/jpeg;base64,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"
+                    alt="">
+            </div>
+            <div class="box">
+                <h4>About the Author</h4>
+                <p>Hi! My name is Joan Smith, I’m a travel blogger from the UK. In this blog I share my adventures
+                    around the world and give you tips about hotels, restaurants, activities and destinations to visit.
+                    You can watch my videos or join my group tours that I organize to selected destinations.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="mainbox">
+            <div class="rbox boox">
+                <h3>Wanderlust Travels</h3>
+                <br>
+                <p>The coolest travel agency that suits your unique interests, making sure you find that dream
+                    destination
+                    you’ve been longing for.</p>
+            </div>
+            <div class="lbox boox">
+                <div class="tbox">
+                    <div class="gbox box0">
+                        <h4>Get in touch</h4>
+                        <br>
+                        <a href="#home">akshatakhare07@gmail.com</a>
+                        <p>9876543210</p>
+                    </div>
+                    <div class="vbox box0" id="klmn">
+                        <h4>Visit Us</h4>
+                        <br>
+                        <p>Mumbai, Maharashtra </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

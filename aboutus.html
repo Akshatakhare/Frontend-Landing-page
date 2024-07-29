@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="icon" type="image/x-icon" href="final.png">
+    <script src="index.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        .noto-sans-uniquifier {
+            font-family: "Noto Sans", sans-serif;
+
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        header .header {
+            position: fixed;
+            top: 70px;
+            z-index: 1;
+            width: 100%;
+            background-color: #f1f1f1;
+        }
+
+        /* The progress container (grey background) */
+        .progress-container {
+            width: 100%;
+            height: 8px;
+            background: #ccc;
+        }
+
+        /* The progress bar (scroll indicator) */
+        .progress-bar {
+            height: 8px;
+            background: #284ad1;
+            width: 0%;
+        }
+
+        * {
+            margin: 0;
+        }
+
+        .head {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70px;
+            /* border: 2px solid black; */
+            position: fixed;
+            /* Set the heading to fixed position */
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            box-shadow: 2px 0px 5px;
+            z-index: 9999;
+        }
+
+        header ul {
+            list-style: none;
+            display: flex;
+            /* position: absolute; */
+            top: 5%;
+            left: 50%;
+            overflow: hidden;
+        }
+
+        .middle {
+
+            padding-top: 20px;
+        }
+
+        ul li {
+            padding: 10px;
+            text-align: center;
+            font-family: "Noto Sans", sans-serif;
+            font-size: 18px;
+
+        }
+
+        ul li span {
+            text-decoration: underline;
+        }
+
+        nav {
+            padding: 0px 30px;
+            padding-top: 70px;
+        }
+
+        nav a {
+            font-family: "Noto Sans", sans-serif;
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 4px;
+        }
+
+        .header-right {
+            float: right;
+            text-align: center;
+        }
+
+        .header-right a:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            display: inline;
+        }
+
+        @media screen and (max-width: 500px) {
+            nav a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .header-right {
+                float: right;
+            }
+        }
+
+        .pic {
+            padding: 45px 60px;
+            padding-bottom: 10px;
+        }
+
+        .pic img {
+            height: 80vh;
+            object-fit: cover;
+            object-position: center;
+        }
+
+
+        footer {
+            height: 60vh;
+            color: white;
+            background-color: rgb(27, 26, 26);
+
+        }
+
+        .mainbox {
+            height: 40vh;
+            padding: 45px;
+            display: flex;
+            gap: 400px;
+        }
+
+        .boox {
+            font-family: "Nunito", sans-serif;
+            font-size: 17px;
+            padding: 23px;
+            font-weight: 400;
+        }
+
+        .rbox {
+            width: 600px;
+            font-weight: 100;
+            font-size: 17px;
+        }
+
+        .rbox h3 {
+            font-weight: 600;
+            font-size: 30px;
+        }
+
+        .tbox {
+            display: flex;
+            gap: 90px;
+            height: 40vh;
+            width: 30vw;
+        }
+
+        .box0 h4 {
+            font-weight: 600;
+            font-size: 22px;
+        }
+
+        .gbox a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .gbox a:hover {
+            text-decoration: none;
+            color: burlywood;
+        }
+
+        article {
+            font-family: "Noto Sans", sans-serif;
+            padding: 5px 170px;
+            margin: 0px 200px;
+        }
+
+        h1 {
+            font-size: 50px;
+            font-weight: 600;
+            padding-bottom: 30px;
+        }
+
+        .span {
+            font-weight: 600;
+            line-height: 2;
+            font-size: 13px;
+        }
+
+        sub {
+            line-height: 1.7;
+        }
+
+        sub p {
+            font-size: 18px;
+            color: rgb(91, 91, 91);
+            font-weight: 400;
+        }
+
+        sub h3 {
+            font-size: 30px;
+            padding: 20px 0px;
+            font-weight: 600;
+        }
+
+        .bottom {
+            padding-bottom: 45px;
+        }
+
+        /* Pagination */
+        .pagination a {
+            color: black;
+            float: right;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: background-color .3s;
+        }
+
+        .pagination a.active {
+            background-color: dodgerblue;
+            color: white;
+        }
+
+        /* Add a grey background color on mouse-over */
+        .pagination a:hover:not(.active) {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <ul>
+                <li><img width="46" height="46" viewBox="0 0 23 24" fill="none" src="ak logo.png" alt="AK"></li>
+                <li class="middle">Contact me at <span class="u">akshatakhare07@gmail.com</span></li>
+            </ul>
+        </div>
+        <div class="header">
+            <h2></h2>
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
+        </div>
+    </header>
+    <br>
+    <nav>
+        <div class="logo">
+            <img width="17%" src="wanderlust travels.png" alt="">
+        </div>
+        <div class="header-right">
+            <a class="active" href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="aboutus.html">About</a>
+            <a href="#Journey">Blog</a>
+        </div>
+    </nav>
+    <div class="pagination">
+        <a href="#">&raquo;</a>
+        <a href="contact.html">6</a>
+        <a class="active" href="aboutus.html">5</a>
+        <a href="doctors.html">4</a>
+        <a href="beginners.html">3</a>
+        <a href="country.html">2</a>
+        <a href="index.html">1</a>
+        <a href="#">&laquo;</a>
+    </div>
+    <div class="pic">
+        <img src="https://images.unsplash.com/photo-1718802357798-2082e2b83ff1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="" width="100%">
+    </div>
+    <article>
+        <p class="span">July 27,2024</p>
+        <h1>About Us</h1>
+        <sub>
+
+            <p>Our mission is to unlock the world’s wonders and create unforgettable travel experiences! As an awesome
+                online travel agency hailing from the India, we’re all about empowering globetrotters like you to explore
+                the beauty of the world with total ease and excitement.
+
+            </p>
+            <br>
+            <p> We’re here to curate the coolest travel packages that suit your unique interests, making sure you find
+                that dream destination you’ve been longing for. Whether you’re flying solo, planning a family getaway,
+                or searching for a romantic escape, count on us to whip up personalized itineraries that go above and
+                beyond your expectations</p>
+            <br>
+
+            <p class="bottom"> Our team of travel enthusiasts is all about keeping it real and being there for you every
+                step of the way. We’ve got your back with expert guidance and support, so you can relax and enjoy your
+                adventure to the fullest. Safety is our top priority, and we only partner with trusted folks, ensuring
+                you’ll feel secure while exploring new horizons.</p>
+        </sub>
+        <hr>
+    </article>
+    <footer>
+        <div class="mainbox">
+            <div class="rbox boox">
+                <h3>Wanderlust Travels</h3>
+                <br>
+                <p>The coolest travel agency that suits your unique interests, making sure you find that dream
+                    destination
+                    you’ve been longing for.</p>
+            </div>
+            <div class="lbox boox">
+                <div class="tbox">
+                    <div class="gbox box0">
+                        <h4>Get in touch</h4>
+                        <br>
+                        <a href="#home">akshatakhare07@gmail.com</a>
+                        <p>9876543210</p>
+                    </div>
+                    <div class="vbox box0" id="klmn">
+                        <h4>Visit Us</h4>
+                        <br>
+                        <p>Mumbai, Maharashtra </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
